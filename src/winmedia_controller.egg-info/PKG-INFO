@@ -1,0 +1,54 @@
+Metadata-Version: 2.2
+Name: winmedia_controller
+Version: 1.1
+Summary: Windows System Media Controller with Async Support
+Home-page: https://github.com/TumGovic/winmedia_controller
+Author: TumGovic
+Author-email: ygmweuaw2@gmail.com
+Keywords: windows,media,controller,async
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: keyboard>=0.13.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Windows Media Controller
+
+Python library for controlling Windows system media with async support.
+
+## Features
+- Получение метаданных трека
+- Управление воспроизведением
+- Мониторинг изменений
+- Автоматическая обработка отсутствующих данных
+
+## Installation
+```bash
+pip install winmedia_controller
+```
+Please install package winrt manualy, my script is 100% work!
+
+## Basic Usage
+```python
+from winmedia_controller import MediaController
+import asyncio
+
+async def print_callback(info):
+    print(f"Now playing: {info['artist']} - {info['title']}")
+
+async def main():
+    controller = MediaController()
+    await controller.monitor(print_callback)
+
+asyncio.run(main())
+```

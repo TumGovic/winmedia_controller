@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/winmedia_controller/__init__.py
+src/winmedia_controller/media_controller.py
+src/winmedia_controller/test_media_controller.py
+src/winmedia_controller.egg-info/PKG-INFO
+src/winmedia_controller.egg-info/SOURCES.txt
+src/winmedia_controller.egg-info/dependency_links.txt
+src/winmedia_controller.egg-info/requires.txt
+src/winmedia_controller.egg-info/top_level.txt
